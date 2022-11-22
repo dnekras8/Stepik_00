@@ -1,2 +1,2 @@
 print('Hello!')
-print(6)
+print(8)
