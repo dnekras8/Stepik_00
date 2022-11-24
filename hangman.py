@@ -94,6 +94,7 @@ def play(word):
         #check_new_input
         while not is_new_input_ok:
             s = input('Введите букву или слово целиком: ').lower()
+            # remember tried word & letters
             if len(s) == 1:
                 if s in guessed_letters:
                     print('Вы уже вводили букву: ' + s)
@@ -109,11 +110,6 @@ def play(word):
         for i in range(len(word)):
             if str(word[i]).lower() == s:
                 word_completion = word_completion[:i] + s + word_completion[(i+1):]
-                #print(word_completion)
-        # if len(s) > 1: #remember tried word & letters
-        #     guessed_words.append(s)
-        # elif len(s) == 1:
-        #     guessed_letters.append(s)
         guessed = (word.lower() == s) or (word.lower() == word_completion)
         if guessed:
             break
@@ -125,8 +121,6 @@ def play(word):
             print(word_completion)
         if not guessed and tries == 0:
             break
-    # else:
-    #     print('You win ELSE!!!')
     if guessed:
         print('You win!!!')
     else:
