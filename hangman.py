@@ -110,6 +110,7 @@ def play(word):
         for i in range(len(word)):
             if str(word[i]).lower() == s:
                 word_completion = word_completion[:i] + s + word_completion[(i+1):]
+                print('Отличная работа, буква', s.upper(), 'присутствует в слове!')
         guessed = (word.lower() == s) or (word.lower() == word_completion)
         if guessed:
             break
@@ -122,7 +123,8 @@ def play(word):
         if not guessed and tries == 0:
             break
     if guessed:
-        print('You win!!!')
+        #print('You win!!!')
+        print('\033[1;30;42mВы выиграли ! \033[0;0m')
     else:
         print('You''re done :-(')
     print(word)
