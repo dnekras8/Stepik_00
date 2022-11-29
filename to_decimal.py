@@ -23,14 +23,14 @@ def from_decimal(num, nfrom):
         num //= nfrom
     return text
 
-# print(from_dec(12))
+#print(from_dec(12))
 # print(to_decimal('111111', 2))
 # print(from_decimal(63, 2))
 # print(to_decimal('1AF2', 16))
 # print(from_decimal(6898, 16))
-#print(from_decimal(513, 2))
+print(from_decimal(513, 2))
 
-print(to_dec('G'))
+#print(to_dec('G'))
 
 
 

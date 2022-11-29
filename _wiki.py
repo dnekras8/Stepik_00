@@ -19,10 +19,15 @@ www задачи: - https://stepik.org/lesson/363345/step/5?unit=348085
 -----
 --pythontutor.ru --freecourse
 --clc.to/910uGw - курс SkillFactory
+--РЕГУЛЯРКИ - https://habr.com/ru/post/349860/
 ----------------------------------
 ---PyCharm--(HotKeys)
 --Ctrl + Space 	- show objects, methods
 --Ctrl + /	- (Un)Comment
 --Alt + Ctrl + L- format PEP8
 
+
+--Ctrl+Q - view| Quick documentation
+--Ctrl+P - view| parameter info
+--Ctrl+B - Navigate| Declaration
 https://text-compare.com/
